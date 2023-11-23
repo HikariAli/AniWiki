@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animation Wiki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">  
+    <script src="https://kit.fontawesome.com/4fbb2767ab.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="../home.html">
+          <img class="w-75" src="../images/favicon.ico" alt="logo"> 
+        </a>
+        <a class="navbar-brand" href="../home.html">Animation Wiki</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                TV
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../TV/CartoonNetwork.html">Cartoon Network</a></li>
+                <li><a class="dropdown-item" href="../TV/Nickelodeon.html">Nickelodeon</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../AniMovies.html" role="button">
+                Movies
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../anime.html" role="button">
+                Anime
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex dropdown" role="search">
+            <input class="form-control me-2 dropdown-toggle" id="myInput" onkeyup="mySearch()" type="text" placeholder="Search" aria-label="Search" data-bs-toggle="dropdown">
+            <ul id="myUL" class="dropdown-menu">
+              <li><a class="dropdown-item" href="../TV/CartoonNetwork.html">Cartoon Network</a></li>
+              <li><a class="dropdown-item" href="../TV/Nickelodeon.html">Nickelodeon</a></li>
+              <li><a class="dropdown-item" href="../AniMovies.html">Animation Movies</a></li>
+              <li><a class="dropdown-item" href="../anime.html">Anime</a></li>
+            </ul>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="content container">
+      <!-- stidio name&logo -->
+      <div class="studio_info">
+        <div class="row">
+          <div class="col-8">
+            <h1>Nickelodeon</h1>
+            <p class="" style="font-size: large;">Cartoon Network is a television channel known for animated content. It's valuable for society as it provides entertaining and often educational shows, contributes to cultural impact with iconic characters, fosters creativity in animation, promotes positive values, offers family-friendly entertainment, and serves as a platform for emerging talent in the industry.</p>
+          </div>
+          <div class="col-4">
+            <img class="img-fluid h-75" src="../images/nickelodeon_logo.png" alt="">
+          </div>
+        </div>
+      </div>
+      
+      <h1 class="mt-4">Most iconic shows of Nickelodeon</h1>
+      
+      <!-- cards -->
+      <div class="shows mt-5">
+        <div class="row">
+          <div class="col">
+            <div class="card h-100">
+              <img src="../images/Sbsp.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SpongeBob SquarePants</h5>
+                <p class="card-text lh-sm">"SpongeBob SquarePants" is an animated series about the cheerful sponge SpongeBob and his underwater friends in Bikini Bottom. Known for its humor and colorful characters, the show follows SpongeBob's adventures at the Krusty Krab and has become a beloved classic.</p>
+                <p class="fw-bold">Author: <span class="fw-normal">	Stephen Hillenburg</span></p>
+                <p class="fw-bold">No. of seasons: <span class="fw-normal">14</span></p>
+                <p class="fw-bold">No. of episodes: <span class="fw-normal">295</span></p>
+                <p class="fw-bold">Release: <span class="fw-normal">May 1, 1999 – present</span></p>
+                <p class="fw-bold">Related: <br>
+                  <span class="fw-normal"> Kamp Koral: SpongeBob's Under Years,</span><br>
+                  <span class="fw-normal"> The Patrick Star Show</span>
+                </p>
+                <button type="button" class="btn btn-secondary" id="Sponge_theme">Opening Theme</button>
+                <audio src="../songs/SB_theme.mp3" id="Sponge_sound"></audio>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../images/avatar.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Avatar: The Last Airbender</h5>
+                <p class="card-text lh-sm">"Avatar: The Last Airbender" is an animated series about Aang, the last Airbender and the Avatar, on a quest to bring balance to a war-torn world. With friends, he learns to master the elements to confront the Fire Nation's tyranny. The show is celebrated for its compelling story and character development.</p>
+                <p class="fw-bold">Author: <span class="fw-normal">	Michael Dante DiMartino, Bryan Konietzko</span></p>
+                <p class="fw-bold">No. of seasons: <span class="fw-normal">3</span></p>
+                <p class="fw-bold">No. of episodes: <span class="fw-normal">61</span></p>
+                <p class="fw-bold">Release: <span class="fw-normal">February 21, 2005 – July 19, 2008</span></p>
+                <p class="fw-bold">Related: <br>
+                  <span class="fw-normal"> Avatar: The Legend of Korra</span>
+                </p>
+                <button type="button" class="btn btn-secondary" id="avatar_theme">Opening Theme</button>
+                <audio src="../songs/avatar.mp3" id="avatar_sound"></audio>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="../images/danny_the_phantom.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Danny Phantom</h5>
+                <p class="card-text lh-sm">"Danny Phantom" is an animated series about Danny Fenton, a teenager with ghost powers who becomes the superhero Danny Phantom. Balancing high school life and battling supernatural threats, the show offers a mix of action and humor.</p>
+                <p class="fw-bold">Author: <span class="fw-normal">	Created by: Butch Hartman <br>
+                  Developed by:	Steve Marmel</span></p>
+                  <p class="fw-bold">No. of seasons: <span class="fw-normal">3</span></p>
+                  <p class="fw-bold">No. of episodes: <span class="fw-normal">53</span></p>
+                  <p class="fw-bold">Release: <span class="fw-normal">April 3, 2004 – August 24, 2007</span></p>
+                  <button type="button" class="btn btn-secondary" id="danny_theme">Opening Theme</button>
+                  <audio src="../songs/Danny.mp3" id="danny_sound"></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <p class="text-center text-body-secondary">
+        Website was created and designed by Mussabay Ali  
+        <br>
+        © 2023 - All rights reserved☺</p>
+      </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../script/script.js"></script>
+  </body>
+</html>

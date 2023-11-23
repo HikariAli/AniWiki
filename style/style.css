@@ -1,0 +1,32 @@
+body {
+    background-color: #F3F3F3;
+}
+
+.content {
+    margin-top: 80px;
+}
+
+.titlu {
+    opacity: 0;
+    transition: opacity 2s ease;
+  }
+  
+.fadeIn {
+  opacity: 1;
+}
+
+.carousel-item img {
+  height: 600px;
+}
+
+span#C {
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+
+span#N {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
